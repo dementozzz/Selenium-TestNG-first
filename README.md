@@ -1,5 +1,5 @@
 # Selenium-TestNG-first
-Hi, my name is Hafidh Dharmawan
+This is my first journey learning the automation using selenium + TestNG. I will share my first code in this section.
 
 <b>Required Tools :</b>
 - [Java 17](https://www.oracle.com/id/java/technologies/downloads/#java17)
@@ -24,30 +24,46 @@ For Artifact ID, it also can be your project name.
 ![4](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/b3a27921-f78d-474d-8996-71f4753f7ffe)
 
 
-**2**. In this step, we want to add Selenium Java dependency and TestNG dependency inside **_pom.xml_**. open it through VSCode and add the dependencies below
+**2**. In this step, we want to Install Selenium Java and TestNG by adding their dependency inside **_pom.xml_** file. open it and add the dependency below
 
 ```xml
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.12.1</version>
-        </dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.12.1</version>
+</dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.8.0</version>
-            <scope>test</scope>
-        </dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version>
+    <scope>test</scope>
+</dependency>
 ```
 
-The final result should be like the image below
+The final result should be like the image below.
 
 ![5 1](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/20568d12-d965-4f95-9753-0947fb2bc672)
 
 **NOTE**: Make sure the copied dependency should be placed inside ```<dependencies>``` tag.
+
+After done add the dependency, save it and click **Yes** button on the bottom right of your screen.
+
+![6](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/4d887b61-f429-427e-abfe-c6636ad96f4b)
+
+**3**. We're already finish install Selenium and testNG, now let's try scenario "Open the browser" first.
+Create a Java file under src\test\java with name ***"{anyname}.java"*** so that VSCode recognize that you want to create a java file and automatically generate the class inside the file.
+
+![7_1](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/faf5b9fc-5ed5-476b-8328-f24e0b2757f8)
+
+![7_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/88cdaf98-94ce-4312-ab09-a582814c2e58)
+
+
+
+
+
 
 
 
