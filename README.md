@@ -60,7 +60,29 @@ Create a Java file under src\test\java with name ***"{anyname}.java"*** so that 
 
 ![7_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/88cdaf98-94ce-4312-ab09-a582814c2e58)
 
+Then copy the code below and put it inside your class
 
+```java
+public void openWebsite(){
+   WebDriver driver = new ChromeDriver();
+   driver.get("https://www.saucedemo.com");
+}
+```
+The result should like in the image below
+
+![main_1](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/6d810c48-9ed9-4186-b201-8f56c9ff5fc5)
+
+**NOTE**: make sure ```import org.openqa.selenium.WebDriver;``` and ```import org.openqa.selenium.chrome.ChromeDriver;``` is present.
+
+Because we also use TestNG, ```@Test``` annotation should added on top of your _void_, otherwise your test cannot be executed.
+
+![main_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/f3413654-e990-401f-916b-b854d5bb9e35)
+
+Now, let's run the code to see if it is work, click play button/green checklist button on the left.
+
+![main_3](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/810435fc-7496-43f1-92b0-803e0ce8981d)
+
+Below is example if your code is run successfully 
 
 
 
