@@ -112,14 +112,26 @@ On VSCode, create a new public void
 
 Copy the value of attribute "id" of username and password inputfield element from the previous step. Then use it by creating a syntax _driver.findElement(By.id('**{id_of_element}**')).sendKeys("**{keywords}**");_ . The final result should be like image below.
 
-![scenario2_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/3682de5a-9ca5-4cb1-a8f7-2f934648f065)
+![scenario2_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/f52c0b98-981d-47c4-952e-d137a1587d5a)
 
 You may notice that there is an error/red underline on _driver_, it is because on our previous step we initiate our Webdriver inside our _openWebsite()_. To resolve this, you need to move the Webdriver outside openWebsite().
 
-![scenario2_3](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/acd28b51-0ad0-419a-b788-1b42403cb865)
+![scenario2_3](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/55dbf1c0-a669-40c7-a681-caafbf66cbe7)
 
 
+**6. Get login button element and click it**
 
+Same as previous step, we need to inspect button element, then copy the value of "id" attribute and use it by creating a syntax _driver.findElement(By.id('**{id_of_element}**')).click();_ . The final result should be like image below.
+
+![scenario2_4](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/bfe11538-9692-46c4-931a-6b1bdb7571a7)
+
+Before we try to run it, dont forget to add ```@Test``` annotation above your void, otherwise it will not be executed.
+
+![scenario2_5](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/a0cdd9b9-3e32-4560-b461-dc336f96d1a6)
+
+Below is example if successfully run.
+
+https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/e049f465-93a5-4acd-a41a-6187ef652875
 
 
 
