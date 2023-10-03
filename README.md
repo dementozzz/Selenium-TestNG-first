@@ -84,9 +84,46 @@ Now, let's run the code to see if it is work, click play button/green checklist 
 
 Below is example if your code is run successfully 
 
-
-
 https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/bd1c92d4-7f97-4ce4-8d1c-7ae096b66511
+
+
+Now that we're successfully working on our first scenario, let's try "Login" scenario after the steps above. The steps will be divided into several parts :
+
+- Finding element of username and password inputfield
+- Fill the username and password
+- Get login button element and click it
+
+**4. Finding element of username and password inputfield**
+
+We can find the element by right click mouse >> choose "Inspect". For better experience, you can right click mouse >> inspect on the username/password field to find the username/password element directly.
+
+![1](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/bd7779a2-8b57-47f9-a6e9-20a48e28f152)
+
+![1_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/282798b4-ae3e-4e0b-aa87-91b18d91b8fe)
+
+
+Since both username and password inputfield have "id" attribute, we can use it to fill the username and password with your own keywords.
+
+**5. Fill the username and password**
+
+On VSCode, create a new public void 
+
+![scenario2_1](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/00ca0126-768a-497f-823b-972f7b81f3b8)
+
+Copy the value of attribute "id" of username and password inputfield element from the previous step. Then use it by creating a syntax _driver.findElement(By.id('**{id_of_element}**')).sendKeys("**{keywords}**");_ . The final result should be like image below.
+
+![scenario2_2](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/3682de5a-9ca5-4cb1-a8f7-2f934648f065)
+
+You may notice that there is an error/red underline on _driver_, it is because on our previous step we initiate our Webdriver inside our _openWebsite()_. To resolve this, you need to move the Webdriver outside openWebsite().
+
+![scenario2_3](https://github.com/dementozzz/Selenium-TestNG-first/assets/20464988/acd28b51-0ad0-419a-b788-1b42403cb865)
+
+
+
+
+
+
+
 
 
 
